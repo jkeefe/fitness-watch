@@ -86,12 +86,13 @@ void loop() {
     double distance = sqrt( pow((AccelX_old - AccelX),2) + 
       pow((AccelY_old - AccelY),2) + 
       pow((AccelZ_old - AccelZ),2) );
+
+    // optionally output the 5 second distance for monitoring
+    // Serial.println(distance);
     
     // keep a sum of the the aggregate distance over the minute
     total_distance += int(distance);
-    
-    // output this 5 second distance for monitoring
-    Serial.println(distance);
+
     
     // make new "old" values 
     AccelX_old = AccelX;
