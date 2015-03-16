@@ -46,7 +46,7 @@ void setup() {
   Wire.begin();
   Serial.begin(9600);
   
-  // Initialize the accellerometer
+  // Initialize the accelerometer
   BMA250Init();
   
  
@@ -75,7 +75,7 @@ void loop() {
   // loop 12 times, taking a measurement every 5 seconds
   for (byte n = 0; n < 12; n++) {
     
-    // Read the accellerometer, storing new readings in
+    // Read the accelerometer, storing new readings in
     // globa variables AccelX, AccelY & AccelZ
     BMA250ReadAccel();
     
