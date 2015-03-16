@@ -113,7 +113,7 @@ void loop() {
   
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
-  File dataFile = SD.open("datalog2.txt", FILE_WRITE);
+  File dataFile = SD.open("datalog.txt", FILE_WRITE);
 
   // if the file is available, write the distance to it, on it's own line.
   // not that we're not timestamping or anything. that would be wise.
